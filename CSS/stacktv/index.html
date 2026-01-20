@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontcdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>STACKTV - New Shows Streaming </title>
+    <!-- favicon -->
+    <!-- <link rel="icon" href="" type="image/x-icon"> -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(42, 40, 40);
+            /* same as hero */
+        }
+
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* navbar */
+        nav {
+            height: 80px;
+            width: 100%;
+            /* border:2px solid red; */
+            background-color: rgb(39, 38, 38);
+            font-weight: bold;
+            position: fixed;
+            top:0px;
+        }
+
+        #navOuterBox {
+            height: 100%;
+            width: 100%;
+            /* border:2px solid red; */
+            display: flex;
+            
+            color: white;
+
+
+        }
+
+        .navLogo img {
+            height:40%;
+            width: auto;
+            margin: 0;
+        }
+
+        .navContent {
+            height: 100%;
+            width: 100%;
+            /* border:2px solid white; */
+            margin: 8px;
+            display: flex;
+            justify-content: space-around;
+            font-size: 17px;
+        }
+
+        .navLeft {
+            width: 50%;
+            text-transform: uppercase;
+            /* border:2px solid red; */
+            display: flex;
+            gap: 30px;
+            align-items: center;
+
+
+        }
+
+        .navRight {
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .navRight>button {
+            background-color: rgb(145, 228, 21);
+            padding: 10px;
+            font-size: 15px;
+            border: none;
+        }
+
+        .fa-brands {
+            font-size: 20px;
+        }
+
+        /* heroSection */
+
+        #heroDiv {
+            height: 80vh;
+            width: 100%;
+            /* border: 2px solid red; */
+            background-color: rgb(42, 40, 40);
+        }
+
+        #heroInnerDiv {
+            height: 500px;
+            width: 45%;
+            /* border: 1px solid white; */
+            
+            padding: 20px;
+            color: white;
+
+        }
+
+        #heroInnerDiv p {
+            font-size: 17px;
+        }
+
+        #heroInnerDiv button {
+            padding: 20px;
+            font-weight: 500;
+            border: none;
+            background-color: rgb(145, 228, 21);
+        }
+        /* herotext */
+
+        .heroText{
+            height:200px;
+            width:85%;
+            /* border:2px solid white; */
+            margin: auto;
+            display: flex;
+        }
+        .heroTextBox{
+          border-left: 1px solid white;
+          width:30%;
+          margin: auto;
+          color:white;
+          padding:30px;
+        }
+        .boldText{
+            font-size:28px;
+        }
+
+        /* heroAllImage */
+        .heroAllImage{
+            height:500px;
+            width:100%;
+            background-color: black;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <nav>
+            <div class="container" id="navOuterBox">
+                <div class="navLogo">
+                    <!-- <img src="https://assets.stacktv.ca/wp-content/uploads/2024/10/StackTV-white-v2.png" alt=""> -->
+                </div>
+                <div class="navContent">
+                    <div class="navLeft">
+                        <p>Home</p>
+                        <p>Where to Subscribe</p>
+                        <p>FAQ</p>
+                    </div>
+                    <div class="navRight">
+                        <button>TRY IT FREE</button>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- herosection -->
+    <main>
+        <!-- heroContent -->
+        <section id="heroDiv">
+            <div class="container">
+                <div id="heroInnerDiv">
+                    <p style="font-size: 3.5rem; font-weight: bold;">STREAM WHAT <br> YOU WANT, <br> <span
+                            style="color:greenyellow">WHEN YOU <br> WANT IT</span> </p>
+                    <br>
+                    <p>Start streaming for only <br> $14.99/month*</p>
+                    <br>
+                    <p>*Provider prices may vary. Restrictions apply.</p>
+                    <br>
+                    <button>TRY IT FREE</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- heroText -->
+
+        <section>
+            <div class="heroText">
+             <div class="heroTextBox" style="border: none;">
+                <p class="boldText">15,000+ Episodes & Movies</p>
+                
+                <p style="color:lightgrey">Of comedy, drama, reality, and more</p>
+             </div>
+             <div class="heroTextBox">
+                <p class="boldText">New & Exclusive Series</p>
+                <p  style="color:lightgrey">New content released every day</p>
+             </div>
+             <div class="heroTextBox">
+                <p class="boldText">The Best TV Channels</p>
+                <p  style="color:lightgrey">Stream your favourites live & on-demand</p>
+             </div>
+            </div>
+        </section>
+
+       <!-- heroAllImage -->
+        <section>
+            <div class="heroAllImage"></div>Image
+        </section>
+
+    </main>
+
+</body>
+
+</html>
