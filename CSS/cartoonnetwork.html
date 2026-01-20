@@ -1,90 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartoon Network</title>
+    <title>Home - Cartoon Network</title>
     <style>
-        *{
-            background-color: #000;
-            color:white;
+        * {
+
+            box-sizing: border-box;
             font-family: cursive;
+            background-color: black;
+            color: white;
         }
-        nav{
-            height:100px;
-            width:100%;
+
+        nav {
+            height: 100px;
+            width: 100%;
             /* border:2px solid white; */
             margin: auto;
+            background-color: black;
 
         }
-        nav ul{
-        display: flex;
-        align-items: center;
+
+        nav ul {
+            display: flex;
+            align-items: center;
         }
-        nav ul a{
+
+        nav ul a {
             text-decoration: none;
+            color: white
         }
-        nav>ul li{
+
+        nav>ul li {
             list-style: none;
-            padding:1%;
+            padding: 1%;
             font-size: 16px;
         }
-        nav ul li:hover{
+
+        nav ul li:hover {
             text-decoration: underline;
         }
-        .cnIcon img{
-            height:50px;
-           
-            background-color: bisque;
+
+        .cnIcon img {
+            height: 50px;
+
+            
         }
-        .mainDiv{
-            height:400px;
-            width:100%;
+
+        /* mainDiv */
+        .mainDiv {
+            height: 400px;
+            width: 100%;
             /* border:2px solid white; */
             display: flex;
-              background-color: rgb(6, 67, 88);
+            background-color: rgb(6, 67, 88);
         }
-        .mainDiv .divLeft{
-            width:50%;
+
+        .mainDiv .divLeft {
+            width: 50%;
             /* border:2px solid white; */
             background-color: rgb(6, 67, 88);
             display: flex;
-            flex-direction: column;                                                                                                                          
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            font-weight: bolder;
         }
-        .mainDiv .divRight img{
+
+        .mainDiv .divRight img {
             width: 100%;
-            height:100%;
+            height: 100%;
+        }
+
+        /* secondMainDiv */
+
+        #secondMainDiv {
+            height: 400px;
+            width: 100%;
+            background-color: black;
+            COLOR: WHITE;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        #mainDiv {
+            height: 80%;
+            width: 60%;
+
+            margin: auto;
+
+        }
+
+        #mainBox {
+            display: flex;
+        }
+
+
+        /* mainImageSection */
+        #mainImageSection {
+            height: 500px;
+            width: 100%;
+
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #mainImageDiv img {
+            height: 80%;
+            width: 85%;
+        }
+
+        /* whereTowatch */
+        #whereToWatch {
+            height: auto;
+            width: 100%;
+            background-color: black;
+            color: white;
+
+        }
+
+        #whereToWatchBox {
+            height: 90%;
+            /* border: 2px solid red; */
+            margin: 40px;
+        }
+
+        #whereToWatchBox>p {
+            padding: 2%;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .flexBoxWhereToWatch {
+            height: 200px;
+            width: 60%;
+            /* border: 2px solid red; */
+            display: flex;
+            margin: 40px;
+        }
+
+        .flexBoxWhereToWatch img {
+            height: 100%;
+            width: 30%;
+            padding: 2%;
         }
     </style>
 </head>
+
 <body>
     <!-- navbar -->
-     <nav>
+    <nav>
         <ul>
             <li class="cnIcon">
-                <img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2025/04/15180709/CartoonNetwork_NavLogo_120x72_NEW.jpg" alt="">
+                <img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2025/04/15180709/CartoonNetwork_NavLogo_120x72_NEW.jpg"
+                    alt="">
             </li>
             <li><a href="#">Home</a></li>
             <li><a href="#">Where to watch</a></li>
             <li><a href="#">Schedule</a></li>
         </ul>
-     </nav>
-     <!-- herosection -->
+    </nav>
 
-     <main>
+    <!-- herosection -->
+
+    <main>
+        <!-- herosection -->
         <section>
             <div class="mainDiv">
                 <div class="divLeft">
                     <p style="font-size: 18px;">WELCOME TO CARTOON NETWORK</p>
-                    <p Style="font-size: 30px;padding: 2px;">Endless hilarious comedy,<br> unexpected surprises & <br> edge-of-your-seat action <br> of the best in animation</p>
+                    <p Style="font-size: 30px;padding: 2px;">Endless hilarious comedy,<br> unexpected surprises & <br>
+                        edge-of-your-seat action <br> of the best in animation</p>
                 </div>
                 <div class="divRight">
-                    <img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2025/04/15174949/CN_Website_Image_1111x771_Teen_Titans_Go.jpg" alt="">
+                    <img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2025/04/15174949/CN_Website_Image_1111x771_Teen_Titans_Go.jpg"
+                        alt="">
                 </div>
             </div>
         </section>
-     </main>
+
+        <!-- mainSection -->
+        <section id="secondMainDiv">
+            <div id="mainDiv">
+                <p style="font-size: 3rem;font-weight: bold;">CARTOON NETWORK</p>
+                <div id="mainBox">
+                    <div style="padding:5%;">
+                        <img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2025/04/15180709/CartoonNetwork_NavLogo_120x72_NEW.jpg"
+                            alt="">
+                    </div>
+                    <div>
+                        <p>Cartoon Network is the funny and unexpected brand that stands out from the pack in a way in
+                            which kids can relate. Our cartoon-crammed network delivers hilarious comedy, unexpected
+                            surprises and edge-of-your-seat action through the best in animated series and hit
+                            blockbuster movies. Cartoon Network is where anything is possible, where fun and adventure
+                            lives–all day, every day.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- mainImage -->
+
+        <section id="mainImageSection">
+            <div id="mainImageDiv">
+                <img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2025/04/15181108/STACKTV_Kids_Website_Banner_999x562_NEW.jpg"
+                    alt="">
+            </div>
+        </section>
+
+
+        <!-- where to watch -->
+        <section id="whereToWatch">
+            <div id="whereToWatchBox">
+                <p>Where to Watch</p>
+
+                <div class="flexBoxWhereToWatch">
+                    <img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2025/04/15174645/stacktv.gif"
+                        alt="">
+                    <div>
+                        <p>STACKTV > </p>
+                        <p>Stream the hottest shows from the biggest TV channels live and on-demand. From comedy to
+                            reality, drama and more, watch exclusive series you can’t get anywhere else. New shows
+                            steaming every day. Try it free!</p>
+                    </div>
+                </div>
+
+                <div class="flexBoxWhereToWatch">
+                    <img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2025/04/15174544/TeletoonPLUS.png"
+                        alt="">
+                    <div>
+                        <p>TeletoonPLUS > </p>
+                        <p>Visit: teletoonplus.ca/
+                            <br>
+                            Available on: Amazon Prime Video Channels, Bell Fibe TV, Bell Fibe TV App, Virgin Plus, and
+                            RiverTV
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="flexBoxWhereToWatch">
+                    <img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2025/04/15174447/access-select_lrg.jpg"
+                        alt="">
+                    <div>
+                        <p>ACCESS COMUNICATIONS </p>
+                        <p>1.866.363.2225
+                            <br>
+                            54 East/110 West
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flexBoxWhereToWatch">
+                    <img src="https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2025/04/15174328/bell-aliant-select_lrg-1.jpg"
+                        alt="">
+                    <div>
+                        <p>BELL ALIANT > </p>
+                        <p>1.866.394.6331
+                            <br>
+                            254 SD / 502 HD
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
 </body>
+
 </html>
